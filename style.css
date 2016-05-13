@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: hsl(40,10%,5%);
 }
 
 header {
@@ -22,6 +23,7 @@ h1 {
   text-transform: uppercase;
   font-size: 4em;
   margin-bottom: 0;
+  margin-top: 0.3em;
 }
 
 h4 {
@@ -50,6 +52,27 @@ nav,
   align-items: center;
 }
 
+#issue-desc {
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(kings.jpeg);
+  background-color: hsla(40,10%,50%,0.5);
+  background-blend-mode: color-burn;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+#issue-desc span {
+  font-weight: 100;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -60,20 +83,13 @@ nav ul li {
   list-style: none;
 }
 
-/*
-nav span {
-  padding: 1em;
-  border-bottom: 1px solid #000;
-}
-*/
-
 #contributors {
   font-weight: 400;
   font-size: 0.9em;
 }
 
 #contributors li {
-  padding: 1em 0.5em;
+  padding: 1em 1em;
 }
 
 #nav-menu-ul {
@@ -99,9 +115,10 @@ nav span {
 
 .item {
   max-width: 600px;
-  padding: 2% 5%;
+  padding: 5% 5%;
   border-top: 1px solid #ccc;
   font-weight: 400;
+  min-height: 100vh;
 }
 
 .item h3 {
@@ -123,8 +140,23 @@ nav span {
   margin-bottom: 0.2em;
 }
 
-.poem {
-/*  padding-left: 5em;*/
+.item:last-of-type {
+  min-height: 40vh;
+}
+
+.last-img {
+  align-self: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#up-button {
+  display: none;
+  position: fixed;
+  right: 50%;
+  bottom: -5px;
+  z-index: 999;
+  overflow: hidden;
 }
 
 /**** Footer Styles ****/
@@ -132,5 +164,9 @@ nav span {
 footer {
   text-align: center;
   width: 100%;
-  border-top: 1px solid #000;
+  border-top: 1px solid #000; 
+  background-color: hsl(40,10%,10%);
+  background-blend-mode: color-burn;
+  background-position: top;
+  color: #fff;
 }
