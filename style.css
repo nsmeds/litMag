@@ -170,3 +170,16 @@ footer {
   background-position: top;
   color: #fff;
 }
+
+/**** Media Queries ****/
+
+@media screen and (max-width: 640px) {
+  
+  h1 {
+    font-size: 3.5em;
+  }
+  
+  .last-img {
+    width: 90%;
+  }
+}
